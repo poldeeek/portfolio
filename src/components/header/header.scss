@@ -1,0 +1,84 @@
+@import "../../styles/main.scss";
+
+header {
+  align-items: center;
+  background-color: $primary;
+  color: $secondary;
+  display: flex;
+  height: 80px;
+  justify-content: space-between;
+  padding: 0 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  flex-direction: row;
+}
+
+.navbarIcon {
+  width: 35px;
+  height: 35px;
+
+  @media (min-width: $desktop) {
+    display: none;
+  }
+}
+
+nav {
+  display: none;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  background-color: $primary;
+
+  @media (min-width: $desktop) {
+    width: auto;
+    display: flex;
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 80px;
+  }
+
+  & > ul {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    @media (min-width: $desktop) {
+      flex-direction: row;
+      height: 80px;
+      padding: 0;
+    }
+
+    & > li {
+      list-style-type: none;
+
+      & > a {
+        text-decoration: none;
+        color: $secondary;
+
+        &:hover {
+          border-bottom: 1px solid $secondary;
+        }
+
+        &.active {
+          border-bottom: 1px solid $secondary;
+        }
+      }
+    }
+  }
+}
+
+nav.active {
+  display: block;
+
+  @media (min-width: $desktop) {
+    display: flex;
+  }
+}
