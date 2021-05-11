@@ -30,7 +30,7 @@ const About = () => {
   }
 
   return (
-    <div className='about'>
+    <div className='about' id='about'>
       <div className='about__profile'>
         <Img
           fluid={data.file.childImageSharp.fluid}

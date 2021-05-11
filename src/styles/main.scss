@@ -5,12 +5,14 @@
 * {
   box-sizing: border-box;
 }
+
 html {
   font-size: 62.5%; /* 1 rem = 10px */
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
   overflow-y: scroll;
   color: $secondary;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -28,6 +30,7 @@ section {
 
   @media (min-width: $desktop) {
     padding: 0 20rem;
+    padding-bottom: 4rem;
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 5rem;
@@ -36,4 +39,8 @@ section {
 
 section.darken-bg {
   background-color: #ebebeb;
+}
+
+[id] {
+  scroll-margin-top: 8rem;
 }

@@ -26,18 +26,28 @@ const Header = () => {
       <nav className={`${showNavbar ? "active" : ""}`}>
         <ul>
           <li>
-            <a className='active' href='#'>
+            <a
+              className='active'
+              href='#about'
+              onClick={() => setShowNavbar(false)}
+            >
               O mnie
             </a>
           </li>
           <li>
-            <a href='#'>Technologie</a>
+            <a href='#technologies' onClick={() => setShowNavbar(false)}>
+              Technologie
+            </a>
           </li>
           <li>
-            <a href='#'>Doświadczenie</a>
+            <a href='#experience' onClick={() => setShowNavbar(false)}>
+              Doświadczenie
+            </a>
           </li>
           <li>
-            <a href='#'>Projekty</a>
+            <a href='#projects' onClick={() => setShowNavbar(false)}>
+              Projekty
+            </a>
           </li>
         </ul>
       </nav>
