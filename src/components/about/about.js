@@ -4,6 +4,9 @@ import Img from "gatsby-image";
 import { FaGithub, FaEnvelope } from "react-icons/fa";
 import "./about.scss";
 
+import education from "../../data/education";
+import School from "./school";
+
 const About = () => {
   const [hasMounted, setHasMounted] = React.useState(false);
 
@@ -27,32 +30,30 @@ const About = () => {
   }
 
   return (
-    <div className="about">
-      <div className="about__profile">
+    <div className='about'>
+      <div className='about__profile'>
         <Img
           fluid={data.file.childImageSharp.fluid}
-          className="about__profile__photo"
+          className='about__profile__photo'
         />
-        <div className="about__profile__title">
-          <h2>Paweł Polak</h2>
-          <p className="about__profile__title__">
-            Absolwent informatyki inżynierskiej
-          </p>
-          <p className="about__profile__title__university">
+        <div className='about__profile__title'>
+          <h2 className='about__profile__title__name'>Paweł Polak</h2>
+          <span>Absolwent informatyki inżynierskiej</span>
+          <span className='about__profile__title__university'>
             Uniwersytetu Mikołaja Kopernia w Toruniu
-          </p>
-          <div className="about__profile__icons">
-            <a href="mailto:pawelp258@gmail.com" target="_blank">
-              <FaEnvelope className="about__profile__icon" />
+          </span>
+          <div className='about__profile__icons'>
+            <a href='mailto:pawelp258@gmail.com' target='_blank'>
+              <FaEnvelope className='about__profile__icon' />
             </a>
-            <a href="https://github.com/poldeeek" target="_blank">
-              <FaGithub className="about__profile__icon" />
+            <a href='https://github.com/poldeeek' target='_blank'>
+              <FaGithub className='about__profile__icon' />
             </a>
           </div>
         </div>
       </div>
       <section>
-        <h1>O mnie</h1>
+        <h1 className='half-margin'>O mnie</h1>
         <article>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -62,6 +63,12 @@ const About = () => {
           pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
           culpa qui officia deserunt mollit anim id est laborum.
         </article>
+      </section>
+      <section className='about__education'>
+        <h3>Edukacja</h3>
+        {education.map((school) => (
+          <School school={school} />
+        ))}
       </section>
     </div>
   );

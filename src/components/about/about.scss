@@ -33,8 +33,14 @@
         text-align: center;
       }
 
+      &__name {
+        margin: 2rem 0 1.5rem 0;
+      }
+
       &__university {
         font-size: $very-small;
+        margin: 0.5rem 0 3rem 0;
+        color: #707070;
       }
     }
 
@@ -44,8 +50,36 @@
     }
 
     &__icon {
-      width: 2.2rem;
+      width: 2.8rem;
       height: 2.8rem;
+    }
+  }
+}
+
+.school {
+  display: flex;
+  margin: 2rem 0 1rem 0;
+  gap: 2rem;
+
+  &__icon {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+
+  &__info {
+    p {
+      font-size: $small;
+      margin: 0.3rem 0;
+    }
+
+    p.school-name {
+      margin-top: -0.1rem;
+      font-size: $very-small;
+      color: $additional;
+    }
+
+    p.faculty {
+      font-size: $big;
     }
   }
 }

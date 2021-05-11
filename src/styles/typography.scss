@@ -17,9 +17,25 @@ h1 {
   font-weight: normal;
 }
 
+h1.half-margin {
+  margin: 1.5rem 0 0.5rem 0;
+}
+
 h2 {
   font-size: $large;
   font-weight: normal;
+  letter-spacing: 0.02rem;
+}
+
+h3 {
+  font-size: $big;
+  font-weight: bold;
+  margin: 2rem 0 0.5rem 0;
+  letter-spacing: 0.03rem;
+}
+
+article {
+  font-size: $small;
 }
 
 .bold {
