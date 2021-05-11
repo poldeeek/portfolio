@@ -1,9 +1,5 @@
 @import "../../styles/main.scss";
 
-.experience {
-  margin-bottom: 2rem;
-}
-
 .job {
   margin-top: 2rem;
   padding: 2rem;
@@ -15,5 +11,19 @@
   &:hover {
     -webkit-box-shadow: 2px 2px 14px 0px rgba(0, 0, 0, 0.3);
     box-shadow: 2px 2px 14px 0px rgba(0, 0, 0, 0.3);
+  }
+
+  &__name {
+    font-weight: bold;
+    font-size: $big;
+  }
+
+  &__company {
+    padding-top: 0.5rem;
+  }
+
+  &__duration {
+    font-size: $very-small;
+    color: $additional;
   }
 }

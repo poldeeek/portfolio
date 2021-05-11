@@ -5,7 +5,7 @@ const education = [
     schoolName: "Uniwersytet Mikołaja Kopernika w Toruniu",
   },
   {
-    duringTime: "wrzesień 2014 - czerwiec 2017",
+    duringTime: "wrzesień 2013 - czerwiec 2017",
     faculty: "Technikum informatyczne",
     schoolName: "Zespół Szkół nr 1 w Działdowie",
   },

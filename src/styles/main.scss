@@ -24,6 +24,8 @@ body {
 
 section {
   padding: 0 1.5rem;
+  padding-bottom: 4rem;
+
   @media (min-width: $desktop) {
     padding: 0 20rem;
     display: grid;

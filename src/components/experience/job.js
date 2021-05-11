@@ -6,9 +6,9 @@ const Job = ({ job }) => {
   const { name, company, duration } = job;
   return (
     <div className='job'>
-      <div>{name}</div>
-      <div>{company}</div>
-      <div>{duration}</div>
+      <div className='job__name'>{name}</div>
+      <div className='job__company'>{company}</div>
+      <div className='job__duration'>{duration}</div>
     </div>
   );
 };
