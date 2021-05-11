@@ -2,5 +2,9 @@
 
 .footer {
   background-color: $primary;
-  height: 5rem;
+  font-size: $small;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

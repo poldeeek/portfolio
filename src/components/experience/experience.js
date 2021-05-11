@@ -1,12 +1,17 @@
 import React from "react";
+import jobs from "../../data/jobs";
 
 import "./experience.scss";
+import Job from "./job";
 
 const Experience = () => {
   return (
-    <div className='experience'>
+    <section className='experience'>
       <h1 className='half-margin'>Doświadczenie</h1>
-    </div>
+      {jobs.map((job) => (
+        <Job job={job} key={job.company} />
+      ))}
+    </section>
   );
 };
 

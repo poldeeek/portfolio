@@ -13,6 +13,10 @@ header {
   width: 100%;
   flex-direction: row;
   z-index: 50;
+
+  @media (min-width: $desktop) {
+    padding: 0 20rem;
+  }
 }
 
 .navbarIcon {
@@ -51,7 +55,7 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
 
     @media (min-width: $desktop) {
       flex-direction: row;

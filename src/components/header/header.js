@@ -7,13 +7,13 @@ const Header = () => {
   const [showNavbar, setShowNavbar] = useState(false);
 
   let icon = (
-    <FaBars className="navbarIcon" onClick={() => setShowNavbar(!showNavbar)} />
+    <FaBars className='navbarIcon' onClick={() => setShowNavbar(!showNavbar)} />
   );
 
   if (showNavbar) {
     icon = (
       <FaTimes
-        className="navbarIcon"
+        className='navbarIcon'
         onClick={() => setShowNavbar(!showNavbar)}
       />
     );
@@ -21,20 +21,23 @@ const Header = () => {
 
   return (
     <header>
-      <h2 className="bold">Paweł Polak</h2>
+      <h2 className='bold'>Paweł Polak</h2>
       {icon}
       <nav className={`${showNavbar ? "active" : ""}`}>
         <ul>
           <li>
-            <a className="active" href="#">
+            <a className='active' href='#'>
               O mnie
             </a>
           </li>
           <li>
-            <a href="#">Doświadczenie</a>
+            <a href='#'>Technologie</a>
           </li>
           <li>
-            <a href="#">Projekty</a>
+            <a href='#'>Doświadczenie</a>
+          </li>
+          <li>
+            <a href='#'>Projekty</a>
           </li>
         </ul>
       </nav>

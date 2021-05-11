@@ -1,5 +1,5 @@
 import { useStaticQuery, graphql } from "gatsby"; // to query for image data
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Img from "gatsby-image";
 import { FaGithub, FaEnvelope } from "react-icons/fa";
 import "./about.scss";
@@ -8,11 +8,11 @@ import education from "../../data/education";
 import School from "./school";
 
 const About = () => {
-  const [hasMounted, setHasMounted] = React.useState(false);
+  const [hasMounted, setHasMounted] = useState(false);
 
   const data = useStaticQuery(graphql`
     query Photo {
-      file(relativePath: { eq: "avatar.jpeg" }) {
+      file(relativePath: { eq: "avatar.jpg" }) {
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid
@@ -22,7 +22,7 @@ const About = () => {
     }
   `);
 
-  React.useEffect(() => {
+  useEffect(() => {
     setHasMounted(true);
   }, []);
   if (!hasMounted) {
@@ -60,7 +60,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <section>
+      <div className='about__biography'>
         <h1 className='half-margin'>O mnie</h1>
         <article>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -71,13 +71,13 @@ const About = () => {
           pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
           culpa qui officia deserunt mollit anim id est laborum.
         </article>
-      </section>
-      <section className='about__education'>
-        <h3>Edukacja</h3>
-        {education.map((school) => (
-          <School school={school} key={school.schoolName} />
-        ))}
-      </section>
+        <div className='about__education'>
+          <h3>Edukacja</h3>
+          {education.map((school) => (
+            <School school={school} key={school.schoolName} />
+          ))}
+        </div>
+      </div>
     </div>
   );
 };

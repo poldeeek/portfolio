@@ -4,9 +4,10 @@ import "./technologies.scss";
 
 const Technologies = () => {
   return (
-    <div className='technologies'>
+    <section className='technologies darken-bg'>
       <h1 className='half-margin'>Technologie</h1>
-    </div>
+      <div>Haha</div>
+    </section>
   );
 };
 

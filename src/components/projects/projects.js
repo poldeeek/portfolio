@@ -4,9 +4,9 @@ import "./projects.scss";
 
 const Projects = () => {
   return (
-    <div className='projects'>
+    <section className='projects darken-bg'>
       <h1 className='half-margin'>Projekty</h1>
-    </div>
+    </section>
   );
 };
 
