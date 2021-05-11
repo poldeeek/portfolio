@@ -21,7 +21,7 @@ const Header = () => {
 
   return (
     <header>
-      <h2>Paweł Polak</h2>
+      <h2 className="bold">Paweł Polak</h2>
       {icon}
       <nav className={`${showNavbar ? "active" : ""}`}>
         <ul>

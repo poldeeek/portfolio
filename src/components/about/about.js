@@ -34,7 +34,7 @@ const About = () => {
           className="about__profile__photo"
         />
         <div className="about__profile__title">
-          <h3>Paweł Polak</h3>
+          <h2>Paweł Polak</h2>
           <p className="about__profile__title__">
             Absolwent informatyki inżynierskiej
           </p>
@@ -52,7 +52,7 @@ const About = () => {
         </div>
       </div>
       <section>
-        <h2>O mnie</h2>
+        <h1>O mnie</h1>
         <article>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
