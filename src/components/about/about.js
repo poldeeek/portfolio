@@ -75,7 +75,7 @@ const About = () => {
       <section className='about__education'>
         <h3>Edukacja</h3>
         {education.map((school) => (
-          <School school={school} />
+          <School school={school} key={school.schoolName} />
         ))}
       </section>
     </div>
