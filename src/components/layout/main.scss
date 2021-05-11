@@ -3,5 +3,8 @@
 .layout {
   background-color: $secondary;
   height: 100vh;
+  padding: 0 15px;
   color: $primary;
+  word-break: break-word;
+  box-sizing: border-box;
 }
