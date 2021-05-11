@@ -21,7 +21,11 @@ const Header = () => {
 
   return (
     <header>
-      <h2 className='bold'>Paweł Polak</h2>
+      <h2 className='bold'>
+        <a href='#about' className='secondary-color'>
+          Paweł Polak
+        </a>
+      </h2>
       {icon}
       <nav className={`${showNavbar ? "active" : ""}`}>
         <ul>

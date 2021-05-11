@@ -10,6 +10,7 @@ $very-large: 3rem;
 
 a {
   color: $primary;
+  text-decoration: none;
 }
 
 h1 {
@@ -40,4 +41,8 @@ article {
 
 .bold {
   font-weight: bold;
+}
+
+.secondary-color {
+  color: $secondary;
 }

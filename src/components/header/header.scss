@@ -35,8 +35,6 @@ nav {
   left: 0;
   width: 100%;
   background-color: $primary;
-  transition-duration: 250ms;
-  transform-origin: 50% 0;
 
   @media (min-width: $desktop) {
     width: auto;
