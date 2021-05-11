@@ -1,9 +1,11 @@
 import React from "react";
 
+import "./technologies.scss";
+
 const Technologies = () => {
   return (
-    <div>
-      <h1>Technologie</h1>
+    <div className='technologies'>
+      <h1 className='half-margin'>Technologie</h1>
     </div>
   );
 };

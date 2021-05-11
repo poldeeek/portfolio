@@ -43,10 +43,18 @@ const About = () => {
             Uniwersytetu Mikołaja Kopernia w Toruniu
           </span>
           <div className='about__profile__icons'>
-            <a href='mailto:pawelp258@gmail.com' target='_blank'>
+            <a
+              href='mailto:pawelp258@gmail.com'
+              target='_blank'
+              rel='noreferrer'
+            >
               <FaEnvelope className='about__profile__icon' />
             </a>
-            <a href='https://github.com/poldeeek' target='_blank'>
+            <a
+              href='https://github.com/poldeeek'
+              target='_blank'
+              rel='noreferrer'
+            >
               <FaGithub className='about__profile__icon' />
             </a>
           </div>
