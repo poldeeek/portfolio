@@ -1,3 +1,7 @@
+@import "./breakpoints.scss";
+@import "./colors.scss";
+@import "./typography.scss";
+
 * {
   box-sizing: border-box;
 }
@@ -5,44 +9,15 @@
 html {
   font: 112.5%/1.45em georgia, serif, sans-serif;
   overflow-y: scroll;
+  color: $secondary;
 }
+
 body {
   padding: 0;
   margin: 0;
   margin-top: 80px; // position fixed header and navbar at the top
 }
 
-@import "./breakpoints.scss";
-@import "./colors.scss";
-
-/*
-
-nav {
-  & > ul {
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-
-    & > li {
-      padding: 10px;
-
-      .active {
-        border-bottom: 1px solid white;
-      }
-
-      & > a {
-        color: $secondary;
-        text-decoration: none;
-      }
-
-      & > a:hover {
-        border-bottom: 1px solid white;
-      }
-    }
-  }
+a {
+  color: $primary;
 }
-
-
-*/

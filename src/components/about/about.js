@@ -1,7 +1,7 @@
 import { useStaticQuery, graphql } from "gatsby"; // to query for image data
 import React from "react";
 import Img from "gatsby-image";
-
+import { FaGithub, FaEnvelope } from "react-icons/fa";
 import "./about.scss";
 
 const About = () => {
@@ -26,8 +26,6 @@ const About = () => {
     return null;
   }
 
-  console.log(data);
-
   return (
     <div className="about">
       <div className="about__profile">
@@ -35,6 +33,23 @@ const About = () => {
           fluid={data.file.childImageSharp.fluid}
           className="about__profile__photo"
         />
+        <div className="about__profile__title">
+          <h3>Paweł Polak</h3>
+          <p className="about__profile__title__">
+            Absolwent informatyki inżynierskiej
+          </p>
+          <p className="about__profile__title__university">
+            Uniwersytetu Mikołaja Kopernia w Toruniu
+          </p>
+          <div className="about__profile__icons">
+            <a href="mailto:pawelp258@gmail.com" target="_blank">
+              <FaEnvelope className="about__profile__icon" />
+            </a>
+            <a href="https://github.com/poldeeek" target="_blank">
+              <FaGithub className="about__profile__icon" />
+            </a>
+          </div>
+        </div>
       </div>
       <section>
         <h2>O mnie</h2>
