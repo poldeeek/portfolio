@@ -12,6 +12,7 @@ const Job = ({ job }) => {
           technologies.map((technology, i) => {
             return (
               <span
+                key={technology}
                 className={`job__technologies__technology ${
                   i === technologies.length - 1
                     ? "job__technologies__technology__last"

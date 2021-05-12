@@ -10,6 +10,7 @@ import {
   SiGraphql,
 } from "react-icons/si";
 import { DiSass, DiLess, DiMongodb, DiMysql } from "react-icons/di";
+import { FaGithub } from "react-icons/fa";
 
 const frontend = [
   {
@@ -96,4 +97,9 @@ const additional = [
   },
 ];
 
-export { frontend, backend, database, additional };
+const githubIcon = {
+  name: "GitHub",
+  icon: FaGithub,
+};
+
+export { frontend, backend, database, additional, githubIcon };

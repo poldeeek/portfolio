@@ -1,31 +1,32 @@
+// project name attribute has to be the same as the name of the file without ext
+// for example photo 'image.png' - project name - image
+
 const projects = [
   {
     name: "Portfolio",
-    description: "Lorem ipsum...",
+    description: "Moje portfolio",
     links: [
       {
-        github: "",
-        live: "",
+        github: "https://github.com/poldeeek/portfolio",
+        live: "https://github.com/poldeeek/portfolio",
       },
     ],
   },
   {
     name: "DarkSociety",
-    description: "Lorem ipsum...",
+    description: "Aplikacja typu social media",
     links: [
       {
-        github: "",
-        live: "",
+        github: "https://github.com/poldeeek/social_media_app",
       },
     ],
   },
   {
     name: "Sportim",
-    description: "Lorem ipsum...",
+    description: "Aplikacja do tworzenia wydarzeń sportowych",
     links: [
       {
-        github: "",
-        live: "",
+        github: "https://github.com/poldeeek/sportim",
       },
     ],
   },

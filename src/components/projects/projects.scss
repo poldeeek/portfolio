@@ -1,5 +1,36 @@
 @import "../../styles/main.scss";
 
-.projects {
-  height: 500px;
+.project {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+
+  &__text {
+    & > h3 {
+      margin-top: 0;
+    }
+  }
+  &__link {
+    margin: 1rem 0;
+    padding: 0.5rem;
+    border: 1px solid $primary;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    align-items: center;
+    max-width: 10rem;
+    color: $secondary;
+    background-color: $primary;
+  }
+
+  &__photo {
+    width: 12rem;
+    height: 6rem;
+    border-radius: 1rem;
+    @media (min-width: $desktop) {
+      width: 18rem;
+      height: 8rem;
+    }
+  }
 }
