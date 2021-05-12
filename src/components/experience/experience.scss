@@ -1,7 +1,6 @@
 @import "../../styles/main.scss";
 
 .experience {
-  height: 500px;
 }
 
 .job {
@@ -29,5 +28,29 @@
   &__duration {
     font-size: $very-small;
     color: $additional;
+  }
+
+  &__technologies {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+
+    &__technology {
+      position: relative;
+      font-size: $small;
+      letter-spacing: 0.05rem;
+      padding-right: 1.5rem;
+      &::after {
+        right: 0.5rem;
+        position: absolute;
+        content: "\00B7";
+      }
+
+      &__last {
+        &::after {
+          content: "";
+        }
+      }
+    }
   }
 }

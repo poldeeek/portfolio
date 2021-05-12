@@ -28,6 +28,10 @@ const frontend = [
     href: "https://pl.reactjs.org/",
   },
   {
+    name: "React Relay",
+    href: "https://relay.dev/",
+  },
+  {
     name: "Gatsby.js",
     icon: SiGatsby,
     href: "https://www.gatsbyjs.com/",
