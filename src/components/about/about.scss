@@ -54,13 +54,21 @@
     }
 
     &__icons {
+      height: 4rem;
       display: flex;
-      gap: 1rem;
+      align-items: center;
+      gap: 1.5rem;
     }
 
     &__icon {
+      position: relative;
       width: 2.8rem;
       height: 2.8rem;
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        transform: scale(1.1);
+      }
     }
   }
 

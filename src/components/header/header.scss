@@ -65,15 +65,37 @@ nav {
       list-style-type: none;
 
       & > a {
+        line-height: 2rem;
+        position: relative;
         text-decoration: none;
         color: $secondary;
 
-        &:hover {
+        &:after {
+          position: absolute;
+          left: 0;
+          content: "";
+          height: 2.3rem;
+          width: 0px;
           border-bottom: 0.1rem solid $secondary;
+          transition: all 700ms ease-in-out;
+          opacity: 1;
+        }
+
+        &:hover:after {
+          width: 100%;
         }
 
         &.active {
-          border-bottom: 0.1rem solid $secondary;
+          &:after {
+            position: absolute;
+            left: 0;
+            content: "";
+            height: 2.3rem;
+            width: 100%;
+            border-bottom: 0.1rem solid $secondary;
+            transition: all 700ms ease-in-out;
+            opacity: 1;
+          }
         }
       }
     }
