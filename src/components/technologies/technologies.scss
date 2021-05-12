@@ -1,5 +1,51 @@
 @import "../../styles/main.scss";
 
-.technologies {
-  height: 500px;
+.technologies-container {
+  & > h3 {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0 1rem 0;
+    @media (min-width: $desktop) {
+      justify-content: flex-start;
+    }
+  }
+}
+
+.technologies-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+
+  @media (min-width: $desktop) {
+    justify-content: flex-start;
+  }
+
+  &__technology {
+    min-width: 13rem;
+    font-size: $small;
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border: 1px solid $primary;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+
+    color: $secondary;
+    background-color: $primary;
+
+    &:hover {
+      color: $primary;
+      background-color: $secondary;
+    }
+
+    &__icon {
+      height: 1.5rem;
+      width: 1.5rem;
+    }
+  }
 }
