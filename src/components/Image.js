@@ -1,5 +1,5 @@
 import { useStaticQuery, graphql } from "gatsby"; // to query for image data
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Img from "gatsby-image";
 
 const Image = ({ fileName, alt, className }) => {
@@ -15,16 +15,9 @@ const Image = ({ fileName, alt, className }) => {
       }
     }
   `);
-  const [hasMounted, setHasMounted] = useState(false);
 
-  useEffect(() => {
-    setHasMounted(true);
-  }, []);
-  if (!hasMounted) {
-    return null;
-  }
   const fluid = allImageSharp.nodes.find(
-    (n) => n.fluid.originalName === `${fileName}.png`
+    (n) => n.fluid && n.fluid.originalName === `${fileName}.webp`
   ).fluid;
 
   return (

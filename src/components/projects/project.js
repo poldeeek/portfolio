@@ -36,7 +36,7 @@ const Project = ({ project }) => {
             );
           })}
       </div>
-      <Image fileName='DarkSociety' className='project__photo' />
+      <Image fileName={name} className='project__photo' />
     </div>
   );
 };
