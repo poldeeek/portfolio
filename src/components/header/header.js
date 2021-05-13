@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { FaBars } from "@react-icons/all-files/fa/FaBars";
 import { FaTimes } from "@react-icons/all-files/fa/FaTimes";
 
+import { debounce } from "lodash-es";
+
 import "./header.scss";
 
 const Header = () => {
@@ -9,7 +11,7 @@ const Header = () => {
   const [activeSection, setActiveSection] = useState("about");
 
   useEffect(() => {
-    const handleScroll = () => {
+    const handleScroll = debounce(() => {
       const elementsId = ["about", "technologies", "experience", "projects"];
       const elements = elementsId.map((id) => document.getElementById(id));
 
@@ -22,7 +24,7 @@ const Header = () => {
           break;
         }
       }
-    };
+    }, 100);
 
     window.addEventListener("scroll", handleScroll);
 
