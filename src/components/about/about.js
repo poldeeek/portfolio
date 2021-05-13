@@ -1,5 +1,5 @@
-import { useStaticQuery, graphql } from "gatsby"; // to query for image data
-import React, { useState, useEffect } from "react";
+import React from "react";
+import { useStaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
 import { FaGithub, FaEnvelope } from "react-icons/fa";
 import "./about.scss";
@@ -8,11 +8,9 @@ import education from "../../data/education";
 import School from "./school";
 
 const About = () => {
-  const [hasMounted, setHasMounted] = useState(false);
-
   const data = useStaticQuery(graphql`
     query Photo {
-      file(relativePath: { eq: "avatar.jpg" }) {
+      file(relativePath: { eq: "avatar.webp" }) {
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid
@@ -21,20 +19,14 @@ const About = () => {
       }
     }
   `);
-
-  useEffect(() => {
-    setHasMounted(true);
-  }, []);
-  if (!hasMounted) {
-    return null;
-  }
-
+  console.log(data);
   return (
     <div className='about' id='about'>
       <div className='about__profile'>
         <Img
           fluid={data.file.childImageSharp.fluid}
           className='about__profile__photo'
+          loading='lazy'
         />
         <div className='about__profile__title'>
           <h2 className='about__profile__title__name'>Paweł Polak</h2>

@@ -1,5 +1,6 @@
 import React from "react";
 
+import Image from "../Image";
 import { githubIcon } from "../../data/stack";
 
 const Project = ({ project }) => {
@@ -35,6 +36,7 @@ const Project = ({ project }) => {
             );
           })}
       </div>
+      <Image fileName='DarkSociety' className='project__photo' />
     </div>
   );
 };
