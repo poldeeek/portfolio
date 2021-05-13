@@ -26,6 +26,8 @@ const Project = ({ project }) => {
                 aria-label='Github'
                 key={link.github}
                 href={link.github}
+                target='_blank'
+                rel='noreferrer'
                 className={`project__link project__link--${
                   Object.getOwnPropertyNames(link)[0]
                 }`}
