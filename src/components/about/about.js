@@ -1,9 +1,8 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
-import { FaEnvelope } from "@react-icons/all-files/fa/FaEnvelope";
-import { FaGithub } from "@react-icons/all-files/fa/FaGithub";
 
+import { FaEnvelope, FaGithub } from "../../data/icons";
 import "./about.scss";
 
 import education from "../../data/education";

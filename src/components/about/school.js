@@ -1,6 +1,6 @@
 import React from "react";
-import { FaGraduationCap } from "@react-icons/all-files/fa/FaGraduationCap";
 
+import { FaGraduationCap } from "../../data/icons";
 import "./about.scss";
 
 const School = ({ school }) => {

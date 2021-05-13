@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { FaBars } from "@react-icons/all-files/fa/FaBars";
-import { FaTimes } from "@react-icons/all-files/fa/FaTimes";
-
 import { debounce } from "lodash-es";
 
+import { FaBars, FaTimes } from "../../data/icons";
 import "./header.scss";
 
 const Header = () => {
