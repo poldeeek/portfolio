@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { FaBars } from "@react-icons/all-files/fa/FaBars";
+import { FaTimes } from "@react-icons/all-files/fa/FaTimes";
 
 import "./header.scss";
 
@@ -10,7 +11,6 @@ const Header = () => {
   useEffect(() => {
     const handleScroll = () => {
       const elementsId = ["about", "technologies", "experience", "projects"];
-
       const elements = elementsId.map((id) => document.getElementById(id));
 
       for (let i = 0; i < elements.length; i++) {

@@ -1,7 +1,9 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
-import { FaGithub, FaEnvelope } from "react-icons/fa";
+import { FaEnvelope } from "@react-icons/all-files/fa/FaEnvelope";
+import { FaGithub } from "@react-icons/all-files/fa/FaGithub";
+
 import "./about.scss";
 
 import education from "../../data/education";
@@ -19,7 +21,7 @@ const About = () => {
       }
     }
   `);
-  console.log(data);
+
   return (
     <div className='about' id='about'>
       <div className='about__profile'>

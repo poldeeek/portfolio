@@ -1,5 +1,5 @@
 import React from "react";
-import { FaGraduationCap } from "react-icons/fa";
+import { FaGraduationCap } from "@react-icons/all-files/fa/FaGraduationCap";
 
 import "./about.scss";
 

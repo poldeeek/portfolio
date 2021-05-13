@@ -1,16 +1,19 @@
-import {
-  SiJavascript,
-  SiTypescript,
-  SiReact,
-  SiGatsby,
-  SiCss3,
-  SiNodeDotJs,
-  SiDjango,
-  SiFirebase,
-  SiGraphql,
-} from "react-icons/si";
-import { DiSass, DiLess, DiMongodb, DiMysql } from "react-icons/di";
-import { FaGithub } from "react-icons/fa";
+import { SiJavascript } from "@react-icons/all-files/si/SiJavascript";
+import { SiTypescript } from "@react-icons/all-files/si/SiTypescript";
+import { SiReact } from "@react-icons/all-files/si/SiReact";
+import { SiGatsby } from "@react-icons/all-files/si/SiGatsby";
+import { SiCss3 } from "@react-icons/all-files/si/SiCss3";
+import { SiNodeDotJs } from "@react-icons/all-files/si/SiNodeDotJs";
+import { SiDjango } from "@react-icons/all-files/si/SiDjango";
+import { SiFirebase } from "@react-icons/all-files/si/SiFirebase";
+import { SiGraphql } from "@react-icons/all-files/si/SiGraphql";
+
+import { DiSass } from "@react-icons/all-files/di/DiSass";
+import { DiLess } from "@react-icons/all-files/di/DiLess";
+import { DiMongodb } from "@react-icons/all-files/di/DiMongodb";
+import { DiMysql } from "@react-icons/all-files/di/DiMysql";
+
+import { FaGithub } from "@react-icons/all-files/fa/FaGithub";
 
 const frontend = [
   {
