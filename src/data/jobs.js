@@ -1,3 +1,5 @@
+// add new job as first in array
+
 const jobs = [
   {
     name: "Software Engineer",

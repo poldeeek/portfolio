@@ -1,7 +1,7 @@
 @import "../../styles/main.scss";
 
 .project {
-  margin-top: 2rem;
+  margin: 2rem 0;
   display: flex;
   justify-content: space-between;
 
@@ -22,6 +22,25 @@
     max-width: 10rem;
     color: $secondary;
     background-color: $primary;
+    transition: all 0.2s ease-out;
+
+    &:hover {
+      color: $primary;
+      background-color: $secondary;
+    }
+  }
+
+  &__technology {
+    font-size: $very-small;
+    color: $additional;
+    position: relative;
+    letter-spacing: 0.05rem;
+    padding-right: 1.5rem;
+  }
+
+  &__desc {
+    font-size: $small;
+    margin-bottom: 1rem;
   }
 
   &__photo {

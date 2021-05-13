@@ -1,6 +1,8 @@
 // project name attribute has to be the same as the name of the file without ext
 // for example photo 'image.png' - project name - image
 
+// add new project as first in array
+
 const projects = [
   {
     name: "Portfolio",
@@ -11,6 +13,7 @@ const projects = [
         live: "https://github.com/poldeeek/portfolio",
       },
     ],
+    technologies: ["Gatsby.js", "SCSS"],
   },
   {
     name: "DarkSociety",
@@ -20,6 +23,7 @@ const projects = [
         github: "https://github.com/poldeeek/social_media_app",
       },
     ],
+    technologies: ["React.js", "TypeScript", "SCSS", "Node.js", "MongoDB"],
   },
   {
     name: "Sportim",
@@ -29,6 +33,7 @@ const projects = [
         github: "https://github.com/poldeeek/sportim",
       },
     ],
+    technologies: ["React.js", "Firebase"],
   },
 ];
 

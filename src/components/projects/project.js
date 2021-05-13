@@ -4,13 +4,21 @@ import Image from "../Image";
 import { githubIcon } from "../../data/stack";
 
 const Project = ({ project }) => {
-  const { description, links, name } = project;
+  const { description, links, name, technologies } = project;
   const Github = githubIcon.icon;
   return (
     <div className='project'>
       <div className='project__text'>
         <h3>{name}</h3>
-        <p>{description}</p>
+        <div className='project__desc'>{description}</div>
+        {technologies &&
+          technologies.map((technology) => {
+            return (
+              <span key={technology} className='project__technology'>
+                {technology}
+              </span>
+            );
+          })}
         {links &&
           links.map((link) => {
             return (
