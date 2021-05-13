@@ -5,6 +5,7 @@ module.exports = {
     author: `Pawel Polak`,
   },
   plugins: [
+    `gatsby-plugin-preact`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     `gatsby-plugin-sass`,
@@ -30,17 +31,5 @@ module.exports = {
       },
     },
     `gatsby-plugin-gatsby-cloud`,
-    {
-      resolve: `gatsby-plugin-google-fonts-v2`,
-      options: {
-        fonts: [
-          {
-            family: "Montserrat",
-            variable: true,
-            weights: ["200..900"],
-          },
-        ],
-      },
-    },
   ],
 };

@@ -15,6 +15,7 @@ const TechnologiesList = ({ title, technologies }) => {
           const Icon = technology.icon ? technology.icon : null;
           return (
             <a
+              aria-label={technology.name}
               href={technology.href}
               target='_blank'
               rel='noreferrer'

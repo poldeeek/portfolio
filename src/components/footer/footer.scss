@@ -1,6 +1,7 @@
 @import "../../styles/main.scss";
 
 .footer {
+  position: relative;
   height: 10rem;
   background-color: $primary;
   font-size: $small;
@@ -8,4 +9,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  &__icon {
+    height: 4.8rem;
+    width: 4.8rem;
+    position: absolute;
+    top: calc(50% - 2.4rem);
+    cursor: pointer;
+    color: $secondary;
+    right: 1.5rem;
+
+    @media (min-width: $desktop) {
+      right: 20rem;
+    }
+  }
 }

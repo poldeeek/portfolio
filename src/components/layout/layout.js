@@ -5,6 +5,7 @@ import { useStaticQuery, graphql } from "gatsby";
 import "./layout.scss";
 import Footer from "../footer/footer";
 import Header from "../header/header";
+import Seo from "../seo";
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -19,8 +20,9 @@ const Layout = ({ children }) => {
 
   return (
     <>
+      <Seo lang={"pl-PL"} title={data.site.siteMetadata.title} />
       <Header />
-      <main className="layout">{children}</main>
+      <main className='layout'>{children}</main>
       <Footer />
     </>
   );

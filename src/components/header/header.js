@@ -7,41 +7,41 @@ const Header = () => {
   const [showNavbar, setShowNavbar] = useState(false);
   const [activeSection, setActiveSection] = useState("about");
 
-  const handleScroll = (event) => {
-    const about = document.querySelector("#about").getBoundingClientRect();
-    const technologies = document
-      .querySelector("#technologies")
-      .getBoundingClientRect();
-    const experience = document
-      .querySelector("#experience")
-      .getBoundingClientRect();
-    const projects = document
-      .querySelector("#projects")
-      .getBoundingClientRect();
+  useEffect(() => {
+    const handleScroll = (event) => {
+      const about = document.querySelector("#about").getBoundingClientRect();
+      const technologies = document
+        .querySelector("#technologies")
+        .getBoundingClientRect();
+      const experience = document
+        .querySelector("#experience")
+        .getBoundingClientRect();
+      const projects = document
+        .querySelector("#projects")
+        .getBoundingClientRect();
 
-    // check the #about
-    if (about.height / 2 - 200 <= about.y * -1) {
-      //check the #technologies
-      if (technologies.height / 2 - 200 <= technologies.y * -1) {
-        //check the #experience
-        if (experience.height / 2 - 200 <= experience.y * -1) {
-          //check the #projects
-          if (projects.height / 2 - 200 <= projects.y * -1) {
+      // check the #about
+      if (about.height / 2 - 200 <= about.y * -1) {
+        //check the #technologies
+        if (technologies.height / 2 - 200 <= technologies.y * -1) {
+          //check the #experience
+          if (experience.height / 2 - 200 <= experience.y * -1) {
+            //check the #projects
+            if (projects.height / 2 - 200 <= projects.y * -1) {
+            } else {
+              setActiveSection("projects");
+            }
           } else {
-            setActiveSection("projects");
+            setActiveSection("experience");
           }
         } else {
-          setActiveSection("experience");
+          setActiveSection("technologies");
         }
       } else {
-        setActiveSection("technologies");
+        setActiveSection("about");
       }
-    } else {
-      setActiveSection("about");
-    }
-  };
+    };
 
-  useEffect(() => {
     window.addEventListener("scroll", handleScroll);
 
     return () => {

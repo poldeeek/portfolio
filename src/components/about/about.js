@@ -44,6 +44,7 @@ const About = () => {
           </span>
           <div className='about__profile__icons'>
             <a
+              aria-label='E-mail'
               href='mailto:pawelp258@gmail.com'
               target='_blank'
               rel='noreferrer'
@@ -51,6 +52,7 @@ const About = () => {
               <FaEnvelope className='about__profile__icon' />
             </a>
             <a
+              aria-label='GitHub'
               href='https://github.com/poldeeek'
               target='_blank'
               rel='noreferrer'
@@ -63,13 +65,20 @@ const About = () => {
       <div className='about__biography'>
         <h1 className='half-margin'>O mnie</h1>
         <article>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <p>
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur.
+          </p>
+          <p>
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt mollit anim id est laborum.
+          </p>
         </article>
         <div className='about__education'>
           <h3>Edukacja</h3>

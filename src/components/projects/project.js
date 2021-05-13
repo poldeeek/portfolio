@@ -1,6 +1,5 @@
 import React from "react";
 
-import Image from "../Image";
 import { githubIcon } from "../../data/stack";
 
 const Project = ({ project }) => {
@@ -23,6 +22,7 @@ const Project = ({ project }) => {
           links.map((link) => {
             return (
               <a
+                aria-label='Github'
                 key={link.github}
                 href={link.github}
                 className={`project__link project__link--${
@@ -35,7 +35,6 @@ const Project = ({ project }) => {
             );
           })}
       </div>
-      <Image fileName='DarkSociety' className='project__photo' />
     </div>
   );
 };
