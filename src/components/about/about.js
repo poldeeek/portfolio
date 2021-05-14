@@ -3,7 +3,6 @@ import { useStaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 
 import { FaEnvelope, FaGithub } from '../../data/icons';
-import './about.scss';
 
 import education from '../../data/education';
 import School from './school';

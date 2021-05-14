@@ -2,7 +2,6 @@ import React from 'react';
 
 import projects from '../../data/projects';
 import Project from './project';
-import './projects.scss';
 
 const Projects = () => {
     if (projects.length === 0) return null;

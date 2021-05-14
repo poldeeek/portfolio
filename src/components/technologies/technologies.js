@@ -1,7 +1,5 @@
 import React from 'react';
 
-import './technologies.scss';
-
 import { frontend, backend, database, additional } from '../../data/stack';
 import TechnologiesList from './technologiesList';
 

@@ -1,7 +1,6 @@
 import React from 'react';
 
 import { FaGraduationCap } from '../../data/icons';
-import './about.scss';
 
 const School = ({ school }) => {
     const { duringTime, faculty, schoolName } = school;

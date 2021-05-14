@@ -1,7 +1,5 @@
 import React from 'react';
 
-import './technologies.scss';
-
 const TechnologiesList = ({ title, technologies }) => {
     if (technologies.length === 0) {
         return null;

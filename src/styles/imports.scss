@@ -1,0 +1,14 @@
+// config
+
+@import './breakpoints.scss';
+@import './colors.scss';
+@import './typography.scss';
+
+// components
+@import '../components/about/about.scss';
+@import '../components/experience/experience.scss';
+@import '../components/footer/footer.scss';
+@import '../components/header/header.scss';
+@import '../components/layout/layout.scss';
+@import '../components/projects/projects.scss';
+@import '../components/technologies/technologies.scss';

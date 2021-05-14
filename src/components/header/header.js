@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { debounce } from 'lodash-es';
 
 import { FaBars, FaTimes } from '../../data/icons';
-import './header.scss';
 
 const Header = () => {
     const [showNavbar, setShowNavbar] = useState(false);

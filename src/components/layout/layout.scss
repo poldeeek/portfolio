@@ -1,7 +1,9 @@
-@import "../../styles/main.scss";
-
 .layout {
-  background-color: $secondary;
-  color: $primary;
-  word-break: break-word;
+    background-color: $secondary;
+    color: $primary;
+    word-break: break-word;
+}
+
+.secondary-color {
+    color: $secondary;
 }
