@@ -4,7 +4,6 @@ import Image from '../Image';
 
 const Project = ({ project }) => {
     const { description, links, name, technologies } = project;
-    console.log(links);
 
     return (
         <div className='project'>
