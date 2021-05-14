@@ -1,17 +1,17 @@
-import React from "react";
+import React from 'react';
 
-import { IoIosArrowUp } from "../../data/icons";
-import "./footer.scss";
+import { IoIosArrowUp } from '../../data/icons';
+import './footer.scss';
 
 const Footer = () => {
-  return (
-    <footer className='footer'>
-      &copy; Paweł Polak
-      <a aria-label='Go up' href='#about'>
-        <IoIosArrowUp className='footer__icon' />
-      </a>
-    </footer>
-  );
+    return (
+        <footer className='footer'>
+            &copy; Paweł Polak
+            <a aria-label='Go up' href='#about'>
+                <IoIosArrowUp className='footer__icon' />
+            </a>
+        </footer>
+    );
 };
 
 export default Footer;

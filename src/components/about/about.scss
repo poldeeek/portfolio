@@ -1,112 +1,116 @@
-@import "../../styles/main.scss";
+@import '../../styles/main.scss';
 
 .about {
-  padding: 0 1.5rem;
+    padding: 0 1.5rem;
 
-  @media (min-width: $desktop) {
-    display: grid;
-    grid-template-columns: 1fr 2.5fr;
-    gap: 5rem;
-    padding: 0 20rem;
-  }
-
-  &__profile {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-
-    &__photo {
-      width: 20rem;
-      height: 20rem;
-      border-radius: 100%;
-
-      @media (min-width: $desktop) {
-        width: 25rem;
-        height: 25rem;
-      }
+    @media (min-width: $tablet) {
+        display: grid;
+        grid-template-columns: 1fr 2.5fr;
+        gap: 5rem;
+        padding: 0 10rem;
     }
 
-    &__title {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-
-      p {
-        margin: 0;
-        padding: 0;
-        text-align: center;
-      }
-
-      &__name {
-        margin: 2rem 0 1.5rem 0;
-      }
-
-      &__university {
-        font-size: $very-small;
-        margin: 0.5rem 0 3rem 0;
-        color: #707070;
-      }
-    }
-
-    &__icons {
-      height: 4rem;
-      display: flex;
-      align-items: center;
-      gap: 1.5rem;
-    }
-
-    &__icon {
-      position: relative;
-      width: 2.8rem;
-      height: 2.8rem;
-      transition: all 0.2s ease-in-out;
-
-      &:hover {
-        transform: scale(1.1);
-      }
-    }
-  }
-
-  &__biography {
     @media (min-width: $desktop) {
-      padding: 3.5rem 0;
+        padding: 0 20rem;
     }
-  }
 
-  &__education {
-    margin-top: 5rem;
-  }
+    &__profile {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+
+        &__photo {
+            width: 20rem;
+            height: 20rem;
+            border-radius: 100%;
+
+            @media (min-width: $desktop) {
+                width: 25rem;
+                height: 25rem;
+            }
+        }
+
+        &__title {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            p {
+                margin: 0;
+                padding: 0;
+                text-align: center;
+            }
+
+            &__name {
+                margin: 2rem 0 1.5rem 0;
+            }
+
+            &__university {
+                font-size: $very-small;
+                margin: 0.5rem 0 3rem 0;
+                color: #707070;
+            }
+        }
+
+        &__icons {
+            height: 4rem;
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        &__icon {
+            position: relative;
+            width: 2.8rem;
+            height: 2.8rem;
+            transition: all 0.2s ease-in-out;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    &__biography {
+        @media (min-width: $desktop) {
+            padding: 3.5rem 0;
+        }
+    }
+
+    &__education {
+        margin-top: 5rem;
+    }
 }
 
 .school {
-  display: flex;
-  margin: 2rem 0 1rem 0;
-  gap: 2rem;
+    display: flex;
+    margin: 2rem 0 1rem 0;
+    gap: 2rem;
 
-  &__icon {
-    width: 3.5rem;
-    height: 3.5rem;
-  }
-
-  &__info {
-    p {
-      font-size: $small;
-      margin: 0.3rem 0;
+    &__icon {
+        width: 3.5rem;
+        height: 3.5rem;
     }
 
-    p.school-name {
-      margin-top: -0.1rem;
-      font-size: $very-small;
-      color: $additional;
-    }
+    &__info {
+        p {
+            font-size: $small;
+            margin: 0.3rem 0;
+        }
 
-    p.faculty {
-      font-size: $big;
+        p.school-name {
+            margin-top: -0.1rem;
+            font-size: $very-small;
+            color: $additional;
+        }
+
+        p.faculty {
+            font-size: $big;
+        }
     }
-  }
 }

@@ -1,111 +1,115 @@
-@import "../../styles/main.scss";
+@import '../../styles/main.scss';
 
 header {
-  align-items: center;
-  background-color: $primary;
-  color: $secondary;
-  display: flex;
-  height: 8rem;
-  justify-content: space-between;
-  padding: 0 2rem;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  flex-direction: row;
-  z-index: 50;
+    align-items: center;
+    background-color: $primary;
+    color: $secondary;
+    display: flex;
+    height: 8rem;
+    justify-content: space-between;
+    padding: 0 2rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    flex-direction: row;
+    z-index: 50;
 
-  @media (min-width: $desktop) {
-    padding: 0 20rem;
-  }
+    @media (min-width: $tablet) {
+        padding: 0 10rem;
+    }
+
+    @media (min-width: $desktop) {
+        padding: 0 20rem;
+    }
 }
 
 .navbarIcon {
-  width: 3.5rem;
-  height: 3.5rem;
+    width: 3.5rem;
+    height: 3.5rem;
 
-  @media (min-width: $desktop) {
-    display: none;
-  }
+    @media (min-width: $desktop) {
+        display: none;
+    }
 }
 
 nav {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  background-color: $primary;
-
-  @media (min-width: $desktop) {
-    width: auto;
-    display: flex;
-    position: relative;
-    top: 0;
+    display: none;
+    position: absolute;
+    top: 100%;
     left: 0;
-    height: 8rem;
-  }
-
-  & > ul {
-    margin: 0;
-    padding: 0;
-    padding-bottom: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
+    width: 100%;
+    background-color: $primary;
 
     @media (min-width: $desktop) {
-      flex-direction: row;
-      height: 8rem;
-      padding: 0;
-    }
-
-    & > li {
-      list-style-type: none;
-
-      & > a {
-        line-height: 2rem;
+        width: auto;
+        display: flex;
         position: relative;
-        text-decoration: none;
-        color: $secondary;
-
-        &:after {
-          position: absolute;
-          left: 0;
-          content: "";
-          height: 2.3rem;
-          width: 0px;
-          border-bottom: 0.1rem solid $secondary;
-          transition: all 700ms ease-in-out;
-          opacity: 1;
-        }
-
-        &:hover:after {
-          width: 100%;
-        }
-
-        &.activeLink {
-          &:after {
-            position: absolute;
-            left: 0;
-            content: "";
-            height: 2.3rem;
-            width: 100%;
-            border-bottom: 0.1rem solid $secondary;
-            transition: all 700ms ease-in-out;
-            opacity: 1;
-          }
-        }
-      }
+        top: 0;
+        left: 0;
+        height: 8rem;
     }
-  }
+
+    & > ul {
+        margin: 0;
+        padding: 0;
+        padding-bottom: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+
+        @media (min-width: $desktop) {
+            flex-direction: row;
+            height: 8rem;
+            padding: 0;
+        }
+
+        & > li {
+            list-style-type: none;
+
+            & > a {
+                line-height: 2rem;
+                position: relative;
+                text-decoration: none;
+                color: $secondary;
+
+                &:after {
+                    position: absolute;
+                    left: 0;
+                    content: '';
+                    height: 2.3rem;
+                    width: 0px;
+                    border-bottom: 0.1rem solid $secondary;
+                    transition: all 700ms ease-in-out;
+                    opacity: 1;
+                }
+
+                &:hover:after {
+                    width: 100%;
+                }
+
+                &.activeLink {
+                    &:after {
+                        position: absolute;
+                        left: 0;
+                        content: '';
+                        height: 2.3rem;
+                        width: 100%;
+                        border-bottom: 0.1rem solid $secondary;
+                        transition: all 700ms ease-in-out;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
 }
 
 nav.active {
-  display: block;
+    display: block;
 
-  @media (min-width: $desktop) {
-    display: flex;
-  }
+    @media (min-width: $desktop) {
+        display: flex;
+    }
 }

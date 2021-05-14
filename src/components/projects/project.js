@@ -1,46 +1,57 @@
-import React from "react";
+import React from 'react';
 
-import Image from "../Image";
-import { githubIcon } from "../../data/stack";
+import Image from '../Image';
 
 const Project = ({ project }) => {
-  const { description, links, name, technologies } = project;
-  const Github = githubIcon.icon;
-  return (
-    <div className='project'>
-      <div className='project__text'>
-        <h3>{name}</h3>
-        <div className='project__desc'>{description}</div>
-        {technologies &&
-          technologies.map((technology) => {
-            return (
-              <span key={technology} className='project__technology'>
-                {technology}
-              </span>
-            );
-          })}
-        {links &&
-          links.map((link) => {
-            return (
-              <a
-                aria-label='Github'
-                key={link.github}
-                href={link.github}
-                target='_blank'
-                rel='noreferrer'
-                className={`project__link project__link--${
-                  Object.getOwnPropertyNames(link)[0]
-                }`}
-              >
-                <Github />
-                {githubIcon.name}
-              </a>
-            );
-          })}
-      </div>
-      <Image fileName={name} className='project__photo' />
-    </div>
-  );
+    const { description, links, name, technologies } = project;
+    console.log(links);
+
+    return (
+        <div className='project'>
+            <div className='project__article'>
+                <div className='project__article__describe'>
+                    <h3>{name}</h3>
+                    <div className='project__article__describe__text'>
+                        {description}
+                    </div>
+                </div>
+                <Image
+                    fileName={name}
+                    className='project__article__describe__photo'
+                />
+            </div>
+            <div className='project__info'>
+                {technologies &&
+                    technologies.map((technology) => {
+                        return (
+                            <span
+                                key={technology}
+                                className='project__info__technology'>
+                                {technology}
+                            </span>
+                        );
+                    })}
+                <div className='project__info__links'>
+                    {links &&
+                        links.map((link) => {
+                            const GitHubIcon = link.icon;
+                            return (
+                                <a
+                                    aria-label={link.name}
+                                    key={link.name}
+                                    href={link.href}
+                                    target='_blank'
+                                    rel='noreferrer'
+                                    className={`project__info__links__link`}>
+                                    <GitHubIcon />
+                                    {link.label}
+                                </a>
+                            );
+                        })}
+                </div>
+            </div>
+        </div>
+    );
 };
 
 export default Project;

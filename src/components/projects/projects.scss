@@ -1,55 +1,72 @@
-@import "../../styles/main.scss";
+@import '../../styles/main.scss';
 
 .project {
-  margin: 2rem 0;
-  display: flex;
-  justify-content: space-between;
+    margin: 2rem 0 6rem 0;
 
-  &__text {
-    & > h3 {
-      margin-top: 0;
+    &__article {
+        display: flex;
+        justify-content: space-between;
+
+        &__describe {
+            display: flex;
+            flex-direction: column;
+
+            & > h3 {
+                margin-top: 0;
+            }
+
+            &__text {
+                font-size: $small;
+                margin-bottom: 1rem;
+            }
+
+            &__photo {
+                width: 14rem;
+                height: 8rem;
+                border-radius: 1rem;
+                @media (min-width: $desktop) {
+                    width: 24rem;
+                    height: auto;
+                }
+            }
+        }
     }
-  }
-  &__link {
-    margin: 1rem 0;
-    padding: 0.5rem;
-    border: 1px solid $primary;
-    border-radius: 1rem;
-    display: flex;
-    justify-content: center;
-    gap: 0.5rem;
-    align-items: center;
-    max-width: 10rem;
-    color: $secondary;
-    background-color: $primary;
-    transition: all 0.2s ease-out;
 
-    &:hover {
-      color: $primary;
-      background-color: $secondary;
+    &__info {
+        margin-top: 2rem;
+
+        &__technology {
+            margin-top: 10rem;
+            font-size: $very-small;
+            color: $additional;
+            position: relative;
+            letter-spacing: 0.05rem;
+            padding-right: 1.5rem;
+        }
+
+        &__links {
+            display: flex;
+            gap: 1.5rem;
+
+            &__link {
+                width: 9rem;
+                margin: 1rem 0;
+                padding: 0.5rem;
+                border: 1px solid $primary;
+                border-radius: 1rem;
+                display: flex;
+                justify-content: center;
+                gap: 0.5rem;
+                align-items: center;
+                color: $secondary;
+                background-color: $primary;
+                transition: all 0.2s ease-out;
+
+                &:hover {
+                    color: $primary;
+                    background-color: $secondary;
+                }
+            }
+        }
     }
-  }
-
-  &__technology {
-    font-size: $very-small;
-    color: $additional;
-    position: relative;
-    letter-spacing: 0.05rem;
-    padding-right: 1.5rem;
-  }
-
-  &__desc {
-    font-size: $small;
-    margin-bottom: 1rem;
-  }
-
-  &__photo {
-    width: 12rem;
-    height: 6rem;
-    border-radius: 1rem;
-    @media (min-width: $desktop) {
-      width: 24rem;
-      height: auto;
-    }
-  }
 }
