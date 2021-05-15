@@ -2,7 +2,7 @@
 // for example photo 'image.png' - project name - image
 
 // add new project as first in array
-import { githubIcon } from './icons';
+import { githubIcon, liveIcon } from './icons';
 
 const projects = [
     {
@@ -19,7 +19,7 @@ const projects = [
                 name: 'live',
                 label: 'Live',
                 href: 'https://pawel-portfolio.netlify.app/',
-                icon: githubIcon.icon,
+                icon: liveIcon.icon,
             },
         ],
         technologies: ['Gatsby.js', 'SCSS'],
@@ -31,7 +31,7 @@ const projects = [
             {
                 name: 'github',
                 label: 'GitHub',
-                github: 'https://github.com/poldeeek/social_media_app',
+                href: 'https://github.com/poldeeek/social_media_app',
                 icon: githubIcon.icon,
             },
         ],
@@ -44,7 +44,7 @@ const projects = [
             {
                 name: 'github',
                 label: 'GitHub',
-                github: 'https://github.com/poldeeek/sportim',
+                href: 'https://github.com/poldeeek/sportim',
                 icon: githubIcon.icon,
             },
         ],

@@ -25,10 +25,18 @@ import { FaTimes } from '@react-icons/all-files/fa/FaTimes';
 // Ionicons 4
 import { IoIosArrowUp } from '@react-icons/all-files/io/IoIosArrowUp';
 
-// icon as object
+// Bootstrap icons
+import { BiWorld } from '@react-icons/all-files/bi/BiWorld';
+
+// icons as object
 const githubIcon = {
     name: 'GitHub',
     icon: FaGithub,
+};
+
+const liveIcon = {
+    name: 'Live',
+    icon: BiWorld,
 };
 
 export {
@@ -52,4 +60,5 @@ export {
     FaTimes,
     IoIosArrowUp,
     githubIcon,
+    liveIcon,
 };

@@ -33,7 +33,7 @@ const Project = ({ project }) => {
                 <div className='project__info__links'>
                     {links &&
                         links.map((link) => {
-                            const GitHubIcon = link.icon;
+                            const Icon = link.icon;
                             return (
                                 <a
                                     aria-label={link.name}
@@ -42,7 +42,7 @@ const Project = ({ project }) => {
                                     target='_blank'
                                     rel='noreferrer'
                                     className={`project__info__links__link`}>
-                                    <GitHubIcon />
+                                    <Icon />
                                     {link.label}
                                 </a>
                             );
