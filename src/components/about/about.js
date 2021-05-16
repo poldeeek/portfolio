@@ -56,19 +56,19 @@ const About = () => {
                 <h1 className='half-margin'>O mnie</h1>
                 <article>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua.
+                        Jestem absolwentem informatyki inżynierskiej na wydziale
+                        Matematyki i Informatyki w Toruniu.
                     </p>
+                    <p>Cały czas rozwijam się jako fullstack web developer.</p>
                     <p>
-                        Ut enim ad minim veniam, quis nostrud exercitation
-                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        Duis aute irure dolor in reprehenderit in voluptate
-                        velit esse cillum dolore eu fugiat nulla pariatur.
-                    </p>
-                    <p>
-                        Excepteur sint occaecat cupidatat non proident, sunt in
-                        culpa qui officia deserunt mollit anim id est laborum.
+                        Moje doświadczenie opiera się na roku tworzenia własnych
+                        komerycjnych projektów oraz 4 miesiące pracy jako
+                        fullstack developer. W pracy byłem odpowiedzialny za
+                        poprawienie starego kodu oraz tworzenie nowych
+                        funkcjonalności po stronie frontendu (React.js) wraz z
+                        testami. Zadania polegały również na wprowadzaniu
+                        drobnych poprawek oraz pisaniu testów po stronie
+                        backendu (Django).
                     </p>
                 </article>
                 <div className='about__education'>
