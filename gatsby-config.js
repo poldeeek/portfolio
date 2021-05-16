@@ -1,8 +1,8 @@
 module.exports = {
     siteMetadata: {
-        title: `Pawel Polak Portfolio`,
-        description: `Pawel Polak portfolio page.`,
-        author: `Pawel Polak`,
+        title: `Paweł Polak Portfolio`,
+        description: `Paweł Polak portfolio page.`,
+        author: `Paweł Polak`,
     },
     plugins: [
         `gatsby-plugin-preact`,
