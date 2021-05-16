@@ -62,8 +62,8 @@ const About = () => {
                     <p>Cały czas rozwijam się jako fullstack web developer.</p>
                     <p>
                         Moje doświadczenie opiera się na roku tworzenia własnych
-                        komerycjnych projektów oraz 4 miesiące pracy jako
-                        fullstack developer. W pracy byłem odpowiedzialny za
+                        projektów oraz 4 miesiące pracy jako fullstack
+                        developer. W pracy byłem odpowiedzialny głównie za
                         poprawienie starego kodu oraz tworzenie nowych
                         funkcjonalności po stronie frontendu (React.js) wraz z
                         testami. Zadania polegały również na wprowadzaniu
