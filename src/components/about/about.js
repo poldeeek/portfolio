@@ -30,7 +30,7 @@ const About = () => {
                 />
                 <div className='about__profile__title'>
                     <h2 className='about__profile__title__name'>Paweł Polak</h2>
-                    <span>Absolwent informatyki inżynierskiej</span>
+                    <span>Inżynier informatyki</span>
                     <span className='about__profile__title__university'>
                         Uniwersytetu Mikołaja Kopernia w Toruniu
                     </span>
@@ -56,8 +56,8 @@ const About = () => {
                 <h1 className='half-margin'>O mnie</h1>
                 <article>
                     <p>
-                        Jestem absolwentem informatyki inżynierskiej na wydziale
-                        Matematyki i Informatyki w Toruniu.
+                        Ukończyłem studia inżynierskie kierunku informatyki na
+                        wydziale Matematyki i Informatyki w Toruniu.
                     </p>
                     <p>Cały czas rozwijam się jako fullstack web developer.</p>
                     <p>
@@ -69,6 +69,11 @@ const About = () => {
                         testami. Zadania polegały również na wprowadzaniu
                         drobnych poprawek oraz pisaniu testów po stronie
                         backendu (Django).
+                    </p>
+                    <p>
+                        Aktualnie uczę się pisać witryny internetowe z użyciem
+                        technologii Gatsby.js do generowania wyglądu strony oraz
+                        z wykorzystaniem Wordpress'a jako backendu.
                     </p>
                 </article>
                 <div className='about__education'>
