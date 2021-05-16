@@ -61,8 +61,8 @@ const About = () => {
                     </p>
                     <p>Cały czas rozwijam się jako fullstack web developer.</p>
                     <p>
-                        Moje doświadczenie opiera się na roku tworzenia własnych
-                        projektów oraz 4 miesiące pracy jako fullstack
+                        Moje doświadczenie opiera się o rok tworzenia własnych
+                        projektów oraz 4 miesiącach pracy jako fullstack
                         developer. W pracy byłem odpowiedzialny głównie za
                         poprawienie starego kodu oraz tworzenie nowych
                         funkcjonalności po stronie frontendu (React.js) wraz z
@@ -71,9 +71,9 @@ const About = () => {
                         backendu (Django).
                     </p>
                     <p>
-                        Aktualnie uczę się pisać witryny internetowe z użyciem
-                        technologii Gatsby.js do generowania wyglądu strony oraz
-                        z wykorzystaniem Wordpress'a jako backendu.
+                        Aktualnie uczę się pisać witryny internetowe przy pomocy
+                        technologii Gatsby.js jako frontend oraz systemu
+                        Wordpress jako backendu.
                     </p>
                 </article>
                 <div className='about__education'>
