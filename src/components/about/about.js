@@ -73,7 +73,7 @@ const About = () => {
                     <p>
                         Aktualnie uczę się pisać witryny internetowe przy pomocy
                         technologii Gatsby.js jako frontend oraz systemu
-                        Wordpress jako backendu.
+                        Wordpress jako backend.
                     </p>
                 </article>
                 <div className='about__education'>
