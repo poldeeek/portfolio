@@ -17,6 +17,10 @@ header {
     }
 
     @media (min-width: $desktop) {
+        padding: 0 10rem;
+    }
+
+    @media (min-width: $large-desktop) {
         padding: 0 20rem;
     }
 }

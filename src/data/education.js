@@ -1,6 +1,6 @@
 const education = [
     {
-        duringTime: 'październik 2017 - luty 2021',
+        duringTime: 'październik 2017 - marzec 2021',
         faculty: 'Informatyka inżynierska',
         schoolName: 'Uniwersytet Mikołaja Kopernika w Toruniu',
     },

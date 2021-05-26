@@ -28,6 +28,9 @@ import { IoIosArrowUp } from '@react-icons/all-files/io/IoIosArrowUp';
 // Bootstrap icons
 import { BiWorld } from '@react-icons/all-files/bi/BiWorld';
 
+// Material Design icons
+import { MdLanguage } from '@react-icons/all-files/md/MdLanguage';
+
 // icons as object
 const githubIcon = {
     name: 'GitHub',
@@ -59,6 +62,7 @@ export {
     FaBars,
     FaTimes,
     IoIosArrowUp,
+    MdLanguage,
     githubIcon,
     liveIcon,
 };

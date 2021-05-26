@@ -2,20 +2,25 @@ import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 
-import { FaEnvelope, FaGithub } from '../../data/icons';
+import { FaEnvelope, FaGithub, MdLanguage } from '../../data/icons';
 
 import education from '../../data/education';
+import languages from '../../data/languages';
+
 import School from './school';
 
 const About = () => {
     const data = useStaticQuery(graphql`
-        query Photo {
-            file(relativePath: { eq: "avatar.webp" }) {
+        query PhotoAndCV {
+            photo: file(relativePath: { eq: "avatar.webp" }) {
                 childImageSharp {
                     fluid {
                         ...GatsbyImageSharpFluid
                     }
                 }
+            }
+            cv: file(relativePath: { eq: "cv_pawel_polak.pdf" }) {
+                publicURL
             }
         }
     `);
@@ -24,7 +29,7 @@ const About = () => {
         <div className='about' id='about'>
             <div className='about__profile'>
                 <Img
-                    fluid={data.file.childImageSharp.fluid}
+                    fluid={data.photo.childImageSharp.fluid}
                     className='about__profile__photo'
                     loading='lazy'
                 />
@@ -49,6 +54,12 @@ const About = () => {
                             rel='noreferrer'>
                             <FaGithub className='about__profile__icon' />
                         </a>
+                        <a
+                            href={data.cv.publicURL}
+                            download
+                            className='about__profile__icon'>
+                            CV
+                        </a>
                     </div>
                 </div>
             </div>
@@ -56,8 +67,9 @@ const About = () => {
                 <h1 className='half-margin'>O mnie</h1>
                 <article>
                     <p>
-                        Ukończyłem studia inżynierskie kierunku informatyki na
-                        wydziale Matematyki i Informatyki w Toruniu.
+                        Ukończyłem studia inżynierskie na kierunku informatyki,
+                        na wydziale Matematyki i Informatyki Uniwersytetu
+                        Mikołaja Kopernika w Toruniu.
                     </p>
                     <p>Cały czas rozwijam się jako fullstack web developer.</p>
                     <p>
@@ -76,11 +88,29 @@ const About = () => {
                         Wordpress jako backend.
                     </p>
                 </article>
-                <div className='about__education'>
-                    <h3>Edukacja</h3>
-                    {education.map((school) => (
-                        <School school={school} key={school.schoolName} />
-                    ))}
+                <div className='about__additional'>
+                    <div className='about__education'>
+                        <h3>Edukacja</h3>
+                        {education &&
+                            education.map((school) => (
+                                <School
+                                    school={school}
+                                    key={school.schoolName}
+                                />
+                            ))}
+                    </div>
+                    <div className='about__languages'>
+                        <h3>Języki obce</h3>
+                        {languages &&
+                            languages.map((lang) => (
+                                <div
+                                    className='about__languages__lang'
+                                    key={lang.name}>
+                                    <MdLanguage className='about__additional__icon' />
+                                    <span>{lang.name}</span> {lang.level}
+                                </div>
+                            ))}
+                    </div>
                 </div>
             </div>
         </div>

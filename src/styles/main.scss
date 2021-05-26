@@ -34,6 +34,10 @@ section {
     }
 
     @media (min-width: $desktop) {
+        padding: 0 10rem 4rem 10rem;
+    }
+
+    @media (min-width: $large-desktop) {
         padding: 0 20rem 4rem 20rem;
     }
 }

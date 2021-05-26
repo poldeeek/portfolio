@@ -3,7 +3,7 @@
         display: flex;
         justify-content: center;
         margin: 2rem 0 1rem 0;
-        @media (min-width: $desktop) {
+        @media (min-width: $tablet) {
             justify-content: flex-start;
         }
     }
@@ -15,7 +15,7 @@
     gap: 1rem;
     justify-content: center;
 
-    @media (min-width: $desktop) {
+    @media (min-width: $tablet) {
         justify-content: flex-start;
     }
 

@@ -6,7 +6,7 @@ const School = ({ school }) => {
     const { duringTime, faculty, schoolName } = school;
     return (
         <div className='school'>
-            <FaGraduationCap className='school__icon' />
+            <FaGraduationCap className='about__additional__icon' />
             <div className='school__info'>
                 <p className='faculty'>{faculty}</p>
                 <p>{duringTime}</p>
