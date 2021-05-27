@@ -1,5 +1,6 @@
-import { useStaticQuery, graphql } from 'gatsby'; // to query for image data
 import React from 'react';
+import PropTypes from 'prop-types';
+import { useStaticQuery, graphql } from 'gatsby'; // to query for image data
 import Img from 'gatsby-image';
 
 const Image = ({ fileName, alt, className }) => {
@@ -25,6 +26,12 @@ const Image = ({ fileName, alt, className }) => {
             <Img fluid={fluid} alt={alt} className={className} loading='lazy' />
         </div>
     );
+};
+
+Image.propTypes = {
+    fileName: PropTypes.string.isRequired,
+    alt: PropTypes.string,
+    className: PropTypes.string,
 };
 
 export default Image;

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const Job = ({ job }) => {
     const { name, company, duration, technologies } = job;
@@ -25,6 +26,15 @@ const Job = ({ job }) => {
             <div className='job__duration'>{duration}</div>
         </div>
     );
+};
+
+Job.propTypes = {
+    job: PropTypes.shape({
+        name: PropTypes.string.isRequired,
+        company: PropTypes.string.isRequired,
+        duration: PropTypes.string.isRequired,
+        technologies: PropTypes.arrayOf(PropTypes.string),
+    }),
 };
 
 export default Job;

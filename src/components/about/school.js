@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import { FaGraduationCap } from '../../data/icons';
 
@@ -14,6 +15,14 @@ const School = ({ school }) => {
             </div>
         </div>
     );
+};
+
+School.propTypes = {
+    school: PropTypes.shape({
+        duringTime: PropTypes.string.isRequired,
+        faculty: PropTypes.string.isRequired,
+        schoolName: PropTypes.string.isRequired,
+    }),
 };
 
 export default School;

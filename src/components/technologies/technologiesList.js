@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const TechnologiesList = ({ title, technologies }) => {
     if (technologies.length === 0) {
@@ -29,6 +30,17 @@ const TechnologiesList = ({ title, technologies }) => {
             </div>
         </div>
     );
+};
+
+TechnologiesList.propTypes = {
+    title: PropTypes.string.isRequired,
+    technologies: PropTypes.arrayOf(
+        PropTypes.shape({
+            name: PropTypes.string.isRequired,
+            icon: PropTypes.func,
+            href: PropTypes.string,
+        })
+    ),
 };
 
 export default TechnologiesList;

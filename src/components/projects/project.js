@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import Image from '../Image';
 
@@ -51,6 +52,22 @@ const Project = ({ project }) => {
             </div>
         </div>
     );
+};
+
+Project.propTypes = {
+    project: PropTypes.shape({
+        description: PropTypes.string.isRequired,
+        links: PropTypes.arrayOf(
+            PropTypes.shape({
+                name: PropTypes.string.isRequired,
+                label: PropTypes.string.isRequired,
+                href: PropTypes.string.isRequired,
+                icon: PropTypes.func,
+            })
+        ),
+        name: PropTypes.string.isRequired,
+        technologies: PropTypes.arrayOf(PropTypes.string).isRequired,
+    }),
 };
 
 export default Project;
