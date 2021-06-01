@@ -8,6 +8,7 @@ import {
     SiDjango,
     SiFirebase,
     SiGraphql,
+    SiJest,
     DiSass,
     DiLess,
     DiMongodb,
@@ -29,6 +30,11 @@ const frontend = [
         name: 'React.js',
         icon: SiReact,
         href: 'https://pl.reactjs.org/',
+    },
+    {
+        name: 'Jest',
+        icon: SiJest,
+        href: 'https://jestjs.io/',
     },
     {
         name: 'React Relay',

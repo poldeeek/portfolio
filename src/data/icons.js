@@ -8,6 +8,7 @@ import { SiNodeDotJs } from '@react-icons/all-files/si/SiNodeDotJs';
 import { SiDjango } from '@react-icons/all-files/si/SiDjango';
 import { SiFirebase } from '@react-icons/all-files/si/SiFirebase';
 import { SiGraphql } from '@react-icons/all-files/si/SiGraphql';
+import { SiJest } from '@react-icons/all-files/si/SiJest';
 
 // Devicons
 import { DiSass } from '@react-icons/all-files/di/DiSass';
@@ -52,6 +53,7 @@ export {
     SiDjango,
     SiFirebase,
     SiGraphql,
+    SiJest,
     DiSass,
     DiLess,
     DiMongodb,
