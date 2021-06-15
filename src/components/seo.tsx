@@ -6,7 +6,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 interface ISeo {
   description?: string;
   lang: string;
-  meta: any[];
+  meta?: any[];
   title: string;
 }
 
