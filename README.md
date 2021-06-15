@@ -27,7 +27,8 @@ The aim of this project was to learn Gatsby.js and create my own portfolio.
 
 
 ## Screenshots
-![Desktop](https://user-images.githubusercontent.com/44229717/118708641-415ad900-b81c-11eb-9743-399011f7ffee.PNG)
-![Mobile](https://user-images.githubusercontent.com/44229717/118708648-43249c80-b81c-11eb-874f-5d1248761147.PNG)
+![Desktop](https://user-images.githubusercontent.com/44229717/122134685-681e2680-ce3f-11eb-9c44-ffc8892f4823.JPG)
+![Mobile](https://user-images.githubusercontent.com/44229717/122134690-6bb1ad80-ce3f-11eb-8dc6-be79aa401347.JPG)
+
 
 
