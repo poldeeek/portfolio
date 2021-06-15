@@ -32,39 +32,43 @@ import { BiWorld } from '@react-icons/all-files/bi/BiWorld';
 // Material Design icons
 import { MdLanguage } from '@react-icons/all-files/md/MdLanguage';
 
+interface IIcon {
+  name: string;
+  icon: Function;
+}
 // icons as object
-const githubIcon = {
-    name: 'GitHub',
-    icon: FaGithub,
+const githubIcon: IIcon = {
+  name: 'GitHub',
+  icon: FaGithub
 };
 
-const liveIcon = {
-    name: 'Live',
-    icon: BiWorld,
+const liveIcon: IIcon = {
+  name: 'Live',
+  icon: BiWorld
 };
 
 export {
-    SiJavascript,
-    SiTypescript,
-    SiReact,
-    SiGatsby,
-    SiCss3,
-    SiNodeDotJs,
-    SiDjango,
-    SiFirebase,
-    SiGraphql,
-    SiJest,
-    DiSass,
-    DiLess,
-    DiMongodb,
-    DiMysql,
-    FaGithub,
-    FaEnvelope,
-    FaGraduationCap,
-    FaBars,
-    FaTimes,
-    IoIosArrowUp,
-    MdLanguage,
-    githubIcon,
-    liveIcon,
+  SiJavascript,
+  SiTypescript,
+  SiReact,
+  SiGatsby,
+  SiCss3,
+  SiNodeDotJs,
+  SiDjango,
+  SiFirebase,
+  SiGraphql,
+  SiJest,
+  DiSass,
+  DiLess,
+  DiMongodb,
+  DiMysql,
+  FaGithub,
+  FaEnvelope,
+  FaGraduationCap,
+  FaBars,
+  FaTimes,
+  IoIosArrowUp,
+  MdLanguage,
+  githubIcon,
+  liveIcon
 };
