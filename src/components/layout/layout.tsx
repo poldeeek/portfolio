@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import '../../styles/main.scss';
 
 import Footer from '../footer/footer';
@@ -19,8 +19,10 @@ const Layout: React.FC<ILayout> = ({ children }) => {
   );
 };
 
+/*
 Layout.propTypes = {
   children: PropTypes.node.isRequired
 };
+*/
 
 export default Layout;

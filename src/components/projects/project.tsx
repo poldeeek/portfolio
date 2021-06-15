@@ -70,4 +70,5 @@ Project.propTypes = {
   }).isRequired
 };
 */
+
 export default Project;
