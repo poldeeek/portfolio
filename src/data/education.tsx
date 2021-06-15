@@ -1,8 +1,6 @@
-type IEducation = Array<{
-  duringTime: string;
-  faculty: string;
-  schoolName: string;
-}>;
+import { ISchool } from './types';
+
+type IEducation = Array<ISchool>;
 
 const education: IEducation = [
   {

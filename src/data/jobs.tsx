@@ -1,11 +1,8 @@
 // add new job as first in array
 
-type IJobs = Array<{
-  name: string;
-  company: string;
-  technologies: Array<string>;
-  duration: string;
-}>;
+import { IJob } from './types';
+
+type IJobs = Array<IJob>;
 
 const jobs: IJobs = [
   {

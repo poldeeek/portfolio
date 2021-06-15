@@ -15,11 +15,13 @@ import {
   DiMysql
 } from './icons';
 
-type IFrontend = Array<{
+interface IHrefIcon {
   name: string;
   icon?: Function;
   href: string;
-}>;
+}
+
+type IFrontend = Array<IHrefIcon>;
 
 const frontend: IFrontend = [
   {
@@ -68,11 +70,7 @@ const frontend: IFrontend = [
   }
 ];
 
-type IBackend = Array<{
-  name: string;
-  icon?: Function;
-  href: string;
-}>;
+type IBackend = Array<IHrefIcon>;
 
 const backend: IBackend = [
   {
@@ -87,11 +85,7 @@ const backend: IBackend = [
   }
 ];
 
-type IDataBase = Array<{
-  name: string;
-  icon?: Function;
-  href: string;
-}>;
+type IDataBase = Array<IHrefIcon>;
 
 const database: IDataBase = [
   {
@@ -111,11 +105,7 @@ const database: IDataBase = [
   }
 ];
 
-type IAdditional = Array<{
-  name: string;
-  icon?: Function;
-  href: string;
-}>;
+type IAdditional = Array<IHrefIcon>;
 
 const additional: IAdditional = [
   {

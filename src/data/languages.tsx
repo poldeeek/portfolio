@@ -1,6 +1,7 @@
 // add new language as first in array
+import { ILanguage } from './types';
 
-type ILanguages = Array<{ name: string; level: string }>;
+type ILanguages = Array<ILanguage>;
 
 const languages: ILanguages = [
   {
