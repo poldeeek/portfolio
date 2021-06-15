@@ -4,6 +4,7 @@ import React from 'react';
 import Image from '../Image';
 
 import { IProject } from '../../data/types';
+import { ITechnology } from '../../data/types';
 
 interface IProjectProps {
   project: IProject;
@@ -23,7 +24,7 @@ const Project: React.FC<IProjectProps> = ({ project }) => {
       </div>
       <div className='project__info'>
         {technologies &&
-          technologies.map((technology) => {
+          technologies.map((technology: ITechnology) => {
             return (
               <span key={technology} className='project__info__technology'>
                 {technology}
@@ -32,7 +33,7 @@ const Project: React.FC<IProjectProps> = ({ project }) => {
           })}
         <div className='project__info__links'>
           {links &&
-            links.map((link) => {
+            links.map((link: Object) => {
               const Icon = link.icon;
               return (
                 <a
